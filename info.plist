@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.x3ro.emojithings</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>C9A1F2FC-EE84-4677-A8EF-B53628E87DD7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>047F2A4F-4175-4C34-A59A-1CD772745649</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Lucas Jenß</string>
+	<key>description</key>
+	<string>Your favorite ASCII emoji in Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Emojithings</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>047F2A4F-4175-4C34-A59A-1CD772745649</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>keyword</key>
+				<string>emo</string>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>/usr/bin/env ruby ./emoji.rb "{query}"</string>
+				<key>subtext</key>
+				<string>whatever</string>
+				<key>title</key>
+				<string>¯\_(ツ)_/¯</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C9A1F2FC-EE84-4677-A8EF-B53628E87DD7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>047F2A4F-4175-4C34-A59A-1CD772745649</key>
+		<dict>
+			<key>ypos</key>
+			<real>20</real>
+		</dict>
+		<key>C9A1F2FC-EE84-4677-A8EF-B53628E87DD7</key>
+		<dict>
+			<key>ypos</key>
+			<real>20</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://x3ro.de</string>
+</dict>
+</plist>
